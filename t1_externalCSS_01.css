@@ -1,26 +1,17 @@
-
 *{margin: 0; padding: 0;}
- 
-body{
-font-family: arial, helvetica, sans-serif;
-font-size: 14px;
-background-color: snow;
-}
-header{
-    background: linear-gradient(rgb(245, 232, 163),rgb(240, 214, 65));
-    height: 100px;
-}
+/*ID*/
 
+
+
+/*CLASS*/
 .menu{/*tirar o bullet do item, arrumar bordas*/
     list-style:none; 
     float:left; 
     margin-top: 10px;
-
     width:100%;
     display:flex;
     justify-content: center;
 }
-
 .menu li{/*estilizar os itens, e possibilitar mudar eles de posicao*/
     position:relative; 
     float:left; 
@@ -52,8 +43,6 @@ header{
     display:block; 
     width:150px;
 }
-
-
 h1.h_01{
     font-size: xx-large;
     color: saddlebrown;
@@ -61,4 +50,26 @@ h1.h_01{
     border: moccasin;
 }
 
-
+/*TAG*/
+body{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    background-color: snow;
+}
+header{
+    background: linear-gradient(rgb(245, 232, 163),rgb(240, 214, 65));
+    height: 16%;
+    width: 100%;
+    position: fixed;
+}
+section{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+footer{
+    background: linear-gradient(rgb(240, 214, 65),rgb(245, 232, 163));
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    top:90%;
+}

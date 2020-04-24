@@ -1,7 +1,43 @@
-*{margin: 0; padding: 0;}
 /*ID*/
 
+
+
 /*CLASS*/
+.menu li a:hover{
+    background:#333; 
+    color:#fff; 
+    -moz-box-shadow:0 3px 10px 0 #CCC; 
+    box-shadow:0 3px 10px 0 #ccc; 
+    text-shadow:0px 0px 5px #fff; 
+}
+.menu li:hover ul, .menu li.over ul{display:block;} /*exibindo submenu*/
+.menu li ul li{ /*mudando item do submenu*/
+    border:1px solid #c0c0c0; 
+    display:block; 
+    width:450px;
+}
+.menu li a{/*estilizar links*/
+    color:#333; text-decoration:none; padding:5px 10px; display:block; background-color: white;
+}
+.menu li ul{ /*escondendo o submenu*/
+    position:absolute; 
+    top:25px; 
+    left:0;
+    background-color:#fff; 
+    display:none;
+}
+.menu li{/*estilizar os itens, e possibilitar mudar eles de posicao*/
+    position:relative; 
+    float:left; 
+    border:1px solid #c0c0c0; 
+    background-color: white;
+}
+h1.h_01{
+    font-size: xx-large;
+    color: saddlebrown;
+    text-align: center;
+    border: moccasin;
+}
 .menu{/*tirar o bullet do item, arrumar bordas*/
     list-style:none; 
     float:left; 
@@ -10,48 +46,11 @@
     display:flex;
     justify-content: center;
 }
-.menu li{/*estilizar os itens, e possibilitar mudar eles de posicao*/
-    position:relative; 
-    float:left; 
-    border:1px solid #c0c0c0; 
-    background-color: white;
-
-}
-.menu li a{/*estilizar links*/
-    color:#333; text-decoration:none; padding:5px 10px; display:block; background-color: white;
-}
-.menu li a:hover{
-    background:#333; 
-    color:#fff; 
-    -moz-box-shadow:0 3px 10px 0 #CCC; 
-    box-shadow:0 3px 10px 0 #ccc; 
-    text-shadow:0px 0px 5px #fff; 
-}
-.menu li ul{ /*escondendo o submenu*/
-    position:absolute; 
-    top:25px; 
-    left:0;
-    background-color:#fff; 
-    display:none;
-}   
-.menu li:hover ul, .menu li.over ul{display:block;} /*exibindo submenu*/
-
-.menu li ul li{ /*mudando item do submenu*/
-    border:1px solid #c0c0c0; 
-    display:block; 
-    width:150px;
-}
-h1.h_01{
-    font-size: xx-large;
-    color: saddlebrown;
-    text-align: center;
-    border: moccasin;
-}
 
 /*TAG*/
 body{
     font-family: arial, helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 1vw;
     background-color: snow;
 }
 header{
@@ -59,10 +58,12 @@ header{
     height: 16%;
     width: 100%;
     position: fixed;
+    margin-bottom: 200px;
 }
 section{
     margin-left: 100px;
     margin-right: 100px;
+    clear: both;
 }
 footer{
     background: linear-gradient(rgb(240, 214, 65),rgb(245, 232, 163));
@@ -71,3 +72,4 @@ footer{
     position: fixed;
     top:90%;
 }
+*{margin: 0; padding: 0;}

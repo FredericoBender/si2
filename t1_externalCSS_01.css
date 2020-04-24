@@ -48,6 +48,15 @@ h1.h_01{
     border: moccasin;
 }
 
+h2.h_navTitles{
+font-size: large;
+color: saddlebrown;
+text-align: center;
+border: moccasin;
+
+}
+
+
 /*TAG*/
 body{
     font-family: arial, helvetica, sans-serif;

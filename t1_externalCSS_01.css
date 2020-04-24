@@ -5,10 +5,16 @@ body{
 font-family: arial, helvetica, sans-serif;
 font-size: 14px;
 background-color: snow;
+
+margin-left: 100px;
+margin-right: 100px;
 }
+
 header{
     background: linear-gradient(rgb(245, 232, 163),rgb(240, 214, 65));
     height: 100px;
+    margin-left: -100px;
+    margin-right: -100px;
 }
 
 .menu{/*tirar o bullet do item, arrumar bordas*/

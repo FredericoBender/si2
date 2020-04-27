@@ -68,7 +68,7 @@ header{
 section{
     margin-left: 100px;
     margin-right: 100px;
-    top: 16%;
+    top: 18%;
     position: absolute;
 }
 footer{
@@ -82,6 +82,8 @@ footer{
     justify-content: space-between;
     align-items: center;
     box-shadow: -1px -1px 4px black;
+    font-size: small;
+
 }
 
 *{margin: 0; padding: 0;}

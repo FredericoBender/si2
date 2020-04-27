@@ -58,17 +58,17 @@ body{
 }
 header{
     background: linear-gradient(rgb(245, 232, 163),rgb(240, 214, 65));
-    height: 16%;
+    height: 13%;
     width: 100%;
     position: fixed;
-    margin-bottom: 200px;
+    margin-bottom: 15%;
     z-index: 1;
     box-shadow: 1px 1px 4px black;
 }
 section{
     margin-left: 8%;
     margin-right: 8%;
-    top: 18%;
+    top: 14%;
     position: absolute;
     width: 84%;
 

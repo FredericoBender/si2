@@ -14,7 +14,7 @@
 .menu li ul li{ /*mudando item do submenu*/
     border:1px solid #c0c0c0; 
     display:block; 
-    width:100px;
+    width:115px;
 }
 .menu li a{/*estilizar links*/
     color:#333; text-decoration:none; padding:5px 10px; display:block; background-color: white;
@@ -66,10 +66,12 @@ header{
     box-shadow: 1px 1px 4px black;
 }
 section{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 8%;
+    margin-right: 8%;
     top: 18%;
     position: absolute;
+    width: 84%;
+
 }
 footer{
     background: linear-gradient(rgb(240, 214, 65),rgb(245, 232, 163));

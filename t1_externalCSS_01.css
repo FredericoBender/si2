@@ -38,6 +38,15 @@ h1.h_01{
     text-align: center;
     border: moccasin;
 }
+div.divTable{
+    margin: 1%;
+    border-width:1px;
+    border-style:solid;
+    border-color:black;
+    margin-top: 2%;
+}
+
+
 p.footer{
     margin: 0 20px;
     width: 100px;
@@ -49,6 +58,29 @@ p.footer{
     display:flex;
     justify-content: center;
 }
+
+button.button_submit{
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 8px;
+    font-size: medium;
+    background: radial-gradient(rgb(240, 214, 65),rgb(245, 232, 163));
+    padding: 1%;
+    box-shadow: 1px 1px 4px brown;
+    margin-bottom: 1%;
+    transition-duration: 0.3s;
+}
+
+button.button_submit:hover {
+    border-style: solid;
+    border-color: brown;
+}
+
+.linha-vertical {
+    height: 500px;/*Altura da linha*/
+    border-left: 2px solid black;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+}
+
 
 /*TAG*/
 body{
@@ -85,6 +117,23 @@ footer{
     align-items: center;
     box-shadow: -1px -1px 4px black;
     font-size: small;
+}
+
+form{
+    border-width:1px;
+    border-style:solid;
+    border-color:black;   
+    width: 50%;
+}
+
+label{
+    font-size: small;
+    font-style: normal;
+}
+
+input{
+margin-top: 0.0%;
+margin-bottom: 0.0%;
 
 }
 

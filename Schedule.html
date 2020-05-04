@@ -36,33 +36,66 @@
 
                         <table>
                             <tr>
-                                <td><label>Name: <input type="text"></label> </td> 
-                                <td> <label>Born: </label>  <input type="date"></td> 
+                                <td><label>Nome: </label></td> 
+                                <td> <input type="text"></td>
+                                <td > <label>Nascimento: </label>  </td> 
+                                <td><input type="date"></td>
+                                <td><label>CPF: </label></td>
+                                <td> <input type="text" placeholder="111 222 333 44"></td>
                             </tr>
                             <tr>
-                                <td> <label>Telephone: <input type="tel"></label> </td>
-                                <td> <label>E-mail: <input type="email"></label>  </td>
+                                <td> <label>Telefone: </label> </td>
+                                <td><input type="tel"></td>
+                                <td> <label>E-mail: </label>  </td>
+                                <td><input type="email" placeholder="user@gmail.com"></td>
+                                <td><label>Renda Mensal: </label></td>
+                                <td><input type="text"> </td>
                             </tr>
-                            
                         </table>
                         
                     </div>
                     <div class="divTable">
-                        <h5 style="text-align: left;">Classes</h5> <br>
+                        <h5 style="text-align: left;">Informações de matrícula</h5> <br>
 
-                        <label for="know">Knowledge: </label>
-                        <select id="know">
-                            <option value="beginner">Beginner</option>
-                            <option value="intermediate">Intermediate</option>
-                            <option value="advanced">Advanced</option>
-                          </select>
-                       
+                    <table>
+                        <tr>
+                            <td><label for="know">Conhecimento: </label></td>
+                            <td>
+                                <select id="know">
+                                <option value="beginner">Iniciante</option>
+                                <option value="intermediate">Intermediario</option>
+                                <option value="advanced">Avançado</option>
+                                </select>
+                            </td>
+                            
+                            <td><label>Disponibilidade: </label></td>
+                            <td>
+                                <input type="checkbox"><label>Segunda</label> <br>
+                                <input type="checkbox"><label for=>Terça</label> <br>
+                                <input type="checkbox"><label for=>Quarta</label><br>
+                                <input type="checkbox"><label for=>Quinta</label><br>
+                                <input type="checkbox"><label for=>Sexta</label><br>
+                            </td>
+                            <td><label>Turno:</label></td>
+                            <td>
+                                <input type="checkbox"><label>8:00 - 9:30</label> <br>
+                                <input type="checkbox"><label>9:30 - 11:00</label> <br>
+                                <input type="checkbox"><label for=>14:30 - 16:00</label> <br>
+                                <input type="checkbox"><label for=>17:00 - 18:30</label><br>
+                                <input type="checkbox"><label for=>18:30 - 20:00</label>
+                            </td>
+                        </tr>
+                    </table>
 
-                        <label>Born: </label><input type="date">
                     </div>
 
                 <div style="text-align: center;">
-                    <button class="button_submit">Submit Form </button>
+                    <button class="button_submit" onclick="msg()">Submeter Respostas</button>
+                    <script>
+                        function msg() {
+                          alert("Enviado");
+                        }
+                        </script>
                 </div>
         </form>
 

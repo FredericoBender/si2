@@ -76,6 +76,28 @@ button.button_submit:hover {
     border-color: brown;
 }
 
+.bordaL{
+    width: 7%;
+    height: 100%;
+    background-color:rgb(245, 232, 163);
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-top: -10%;
+    margin-bottom: 0%;
+    opacity: 0.3;
+}
+.bordaR{
+    width: 8%;
+    height: 100%;
+    background-color:rgb(245, 232, 163);
+    margin-right: 0%;
+    margin-left: 93%;
+    margin-top: -10%;
+    margin-bottom: 0%;
+    opacity: 0.3;
+
+}
+
 /*TAG*/
 body{
     font-family: arial, helvetica, sans-serif;
@@ -97,7 +119,6 @@ section{
     top: 14%;
     position: absolute;
     width: 84%;
-
 }
 footer{
     background: linear-gradient(rgb(240, 214, 65),rgb(245, 232, 163));
@@ -120,6 +141,7 @@ form{
     width: 50%;
     margin-left: 25%;
     margin-top: 5%;
+    background-color: white;
 }
 
 label{

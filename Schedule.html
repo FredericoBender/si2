@@ -32,7 +32,7 @@
         <h1 class="h_01">Agendamento</h1>
 
         <p style="text-align: center; margin-top: 2%;">Para agendar sua aula, preencha o formulario a seguir. Assim que seu formulario for analisado, enviaremos um e-mail com as futuras instruções.</p>
-        <form>
+        <form action="/form.php" method="POST">
                 <h4 style="text-align: center; margin-top: 1%;"> Agende suas aulas!<h4> <hr style="border-width:0.5px;border-style:solid;border-color:black;margin-left: 1%;margin-right: 1%;margin-top:2%">
                     <div class="divTable">
                         <h5 style="text-align: left;">Dados</h5> <br>
@@ -40,19 +40,19 @@
                         <table>
                             <tr>
                                 <td><label>Nome: </label></td> 
-                                <td> <input type="text"></td>
+                                <td> <input type="text" name="fullName" required></td>
                                 <td > <label>Nascimento: </label>  </td> 
-                                <td><input type="date"></td>
+                                <td><input type="date" name="date" required></td>
                                 <td><label>CPF: </label></td>
-                                <td> <input type="text" placeholder="111 222 333 44"></td>
+                                <td> <input type="text" placeholder="111 222 333 44" name="cpf" required></td>
                             </tr>
                             <tr>
                                 <td> <label>Telefone: </label> </td>
-                                <td><input type="tel"></td>
+                                <td><input type="tel" name="tel" required></td>
                                 <td> <label>E-mail: </label>  </td>
-                                <td><input type="email" placeholder="user@gmail.com"></td>
+                                <td><input type="email" placeholder="user@gmail.com" name="email" required></td>
                                 <td><label>Renda Mensal: </label></td>
-                                <td><input type="text"> </td>
+                                <td><input type="text" name="renda"> </td>
                             </tr>
                         </table>
                         
@@ -64,7 +64,7 @@
                         <tr>
                             <td><label for="know">Conhecimento: </label></td>
                             <td>
-                                <select id="know">
+                                <select id="know" name="knowledge" required>
                                 <option value="beginner">Iniciante</option>
                                 <option value="intermediate">Intermediario</option>
                                 <option value="advanced">Avançado</option>
@@ -73,27 +73,27 @@
                             
                             <td><label>Disponibilidade: </label></td>
                             <td>
-                                <input type="checkbox"><label>Segunda</label> <br>
-                                <input type="checkbox"><label for=>Terça</label> <br>
-                                <input type="checkbox"><label for=>Quarta</label><br>
-                                <input type="checkbox"><label for=>Quinta</label><br>
-                                <input type="checkbox"><label for=>Sexta</label><br>
+                                <input type="checkbox" name="seg"><label>Segunda</label> <br>
+                                <input type="checkbox" name="ter"><label for=>Terça</label> <br>
+                                <input type="checkbox" name="quar"><label for=>Quarta</label><br>
+                                <input type="checkbox" name="quin"><label for=>Quinta</label><br>
+                                <input type="checkbox" name="sext"><label for=>Sexta</label><br>
                             </td>
                             <td><label>Turno:</label></td>
                             <td>
-                                <input type="checkbox"><label>8:00 - 9:30</label> <br>
-                                <input type="checkbox"><label>9:30 - 11:00</label> <br>
-                                <input type="checkbox"><label for=>14:30 - 16:00</label> <br>
-                                <input type="checkbox"><label for=>17:00 - 18:30</label><br>
-                                <input type="checkbox"><label for=>18:30 - 20:00</label>
+                                <input type="checkbox" name="8"><label>8:00 - 9:30</label> <br>
+                                <input type="checkbox" name="9e30"><label>9:30 - 11:00</label> <br>
+                                <input type="checkbox" name="14e30"><label for=>14:30 - 16:00</label> <br>
+                                <input type="checkbox" name="17"><label for=>17:00 - 18:30</label><br>
+                                <input type="checkbox" name="18e30"><label for=>18:30 - 20:00</label>
                             </td>
                             <td><label>Categoria:</label></td>
                             <td>
-                                <input type="checkbox"><label>Ornamentos</label> <br>
-                                <input type="checkbox"><label>Entalhe</label> <br>
-                                <input type="checkbox"><label>Restauro</label> <br>
-                                <input type="checkbox"><label>Confecção</label> <br>
-                                <input type="checkbox"><label>Oratórios</label> <br>
+                                <input type="checkbox" name="orna"><label>Ornamentos</label> <br>
+                                <input type="checkbox" name="ent"><label>Entalhe</label> <br>
+                                <input type="checkbox" name="rest"><label>Restauro</label> <br>
+                                <input type="checkbox" name="confec"><label>Confecção</label> <br>
+                                <input type="checkbox" name="orat"><label>Oratórios</label> <br>
                             </td>
                         </tr>
                     </table>

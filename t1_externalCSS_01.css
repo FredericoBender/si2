@@ -70,7 +70,7 @@ button.button_submit{
     background: radial-gradient(rgb(240, 214, 65),rgb(245, 232, 163));
     padding: 1%;
     box-shadow: 1px 1px 4px brown;
-    margin-bottom: 1%;
+    
     transition-duration: 0.3s;
 }
 
@@ -121,6 +121,7 @@ header{
 section{
     margin-left: 8%;
     margin-right: 8%;
+    margin-bottom: 100px;
     top: 14%;
     position: absolute;
     width: 84%;

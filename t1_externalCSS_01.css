@@ -70,7 +70,7 @@ button.button_submit{
     background: radial-gradient(rgb(240, 214, 65),rgb(245, 232, 163));
     padding: 1%;
     box-shadow: 1px 1px 4px brown;
-    
+    margin-bottom: 15px;
     transition-duration: 0.3s;
 }
 
@@ -111,17 +111,18 @@ body{
 }
 header{
     background: linear-gradient(rgb(245, 232, 163),rgb(240, 214, 65));
-    height: 13%;
+    height: 14%;
     width: 100%;
     position: fixed;
     margin-bottom: 15%;
     z-index: 1;
+    
     box-shadow: 1px 1px 4px black;
 }
 section{
     margin-left: 8%;
     margin-right: 8%;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     top: 14%;
     position: absolute;
     width: 84%;
@@ -144,7 +145,7 @@ form{
     border-width:1px;
     border-style:solid;
     border-color:black;   
-    width: 60%;
+    width: 700px;
     height: 40%;
     margin-left: 20%;
     margin-top: 5%;
@@ -161,6 +162,7 @@ label{
 table{
     margin-left: 2%;
     margin-right: 2%;
+    table-layout: fixed;
 }
 
 input{
@@ -185,7 +187,6 @@ margin-bottom: 0.0%;
           width: 700px;
           text-align: center;
           margin: auto;
-          margin-bottom: 100px;
         }
     }
   

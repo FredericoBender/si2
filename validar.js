@@ -36,6 +36,8 @@ function validaForm() {
      return false;
     }
 
+    alert("Enviado com sucesso!");
+
 }
 
 var nome, email, cpf;

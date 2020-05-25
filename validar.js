@@ -3,8 +3,8 @@ function validaForm() {
     saveForm();
 
     if(document.dados.tx_nome.value="" || 
-    document.dados.tx_nome.value.length < 8 ){
-        alert( "Preencha campo NOME corretamente!" );
+    document.dados.tx_nome.value.length < 5 ){
+        alert( "Preencha campo NOME corretamente! Nome completo." );
         document.dados.tx_nome.focus();
         loadForm();
         return false;
@@ -22,7 +22,7 @@ function validaForm() {
     }
     
 
-    if(document.dados.cpf.value.length < 11 || !isNumber(document.dados.cpf.value)){
+    if(document.dados.cpf.value.length != 11 || !isNumber(document.dados.cpf.value)){
     alert( "Preencha o campo CPF corretamente! Sem pontos, traços ou espaços." );
      document.dados.cpf.focus();
      loadForm();

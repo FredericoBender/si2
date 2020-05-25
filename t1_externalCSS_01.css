@@ -33,7 +33,7 @@
     background-color: white;
 }
 h1.h_01{
-    font-size: xx-large;
+    font-size: 2vw;
     color: saddlebrown;
     text-align: center;
     border: moccasin;
@@ -82,6 +82,7 @@ button.button_submit:hover {
 .bordaL{
     width: 7%;
     height: 100%;
+    position: fixed;
     background-color:rgb(245, 232, 163);
     margin-right: 0%;
     margin-left: 0%;
@@ -92,6 +93,7 @@ button.button_submit:hover {
 .bordaR{
     width: 8%;
     height: 100%;
+    position: fixed;
     background-color:rgb(245, 232, 163);
     margin-right: 0%;
     margin-left: 93%;
@@ -134,7 +136,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     box-shadow: -1px -1px 4px black;
-    font-size: small;
+    font-size: 1vw;
 }
 
 form{
@@ -148,7 +150,7 @@ form{
 }
 
 label{
-    font-size: small;
+    font-size: 1vw;
     font-style: normal;
     font-weight: normal;
 }
